@@ -4,9 +4,9 @@
     <th>Order Id</th>
     <th>Product
     <th>Price
-    <th>Customer</th>
+    <th>Customer</th>  
   </tr>
   <% @orders.each do |order| %>
-    <%= render(@orders) || "Your order is empty!" %>
+    <%= render @order %>
   <% end %>
 </table>
