@@ -7,6 +7,6 @@
     <th>Customer</th>
   </tr>
   <% @orders.each do |order| %>
-    <%= render :partial => "order", :collection => @posts %>
+    <%= render(@orders) || "Your order is empty!" %>
   <% end %>
 </table>
