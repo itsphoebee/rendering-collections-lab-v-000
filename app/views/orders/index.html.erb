@@ -8,5 +8,7 @@
   </tr>
   <% @orders.each do |order| %>
     <% order.products.each do |product| %>
-  <%= render (@orders) || "You have an empty order!"%>
+    <%= render (@orders) || "You have an empty order!"%>
+    <% end %>
+  <% end %>
 </table>
